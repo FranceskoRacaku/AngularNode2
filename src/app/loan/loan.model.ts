@@ -8,5 +8,5 @@ export interface Loan {
     yearlyNetIncome?: number,
     requestedLoanAmount?: number,
     approvedLoan?: number,
-    id?: number,
+    id: number,
 }

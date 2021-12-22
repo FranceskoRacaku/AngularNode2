@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { LoanComponent } from './loan/loan.component';
 import { LoansComponent } from './loans/loans.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateComponent } from './create/create.component';
+import { EditLoansComponent } from './editloans/editloans.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoanComponent,
-    LoansComponent
+    LoansComponent,
+    CreateComponent,
+    EditLoansComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

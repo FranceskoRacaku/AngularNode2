@@ -7,6 +7,7 @@ body {
     height: 100vh;
     background-position: center center;
     background-size: cover;
+    
   }
   
   .loans-container {
@@ -14,10 +15,11 @@ body {
     height: auto;
     width: 1080px;
     margin: auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
+    align-items: center;
+    display : flex;
   }
   
   .loans-for-maps{
@@ -27,6 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0px 50px 10px 50px;
+    
   }
   
   .title h1 {

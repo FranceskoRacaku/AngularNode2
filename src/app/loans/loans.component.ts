@@ -17,6 +17,15 @@ export class LoansComponent implements OnInit {
     this.loanService.getLoans().subscribe(payload =>{
       this.loans = payload;
     })
-  }
+}
+
+
+    deleteLoans(id: number){
+      this.loanService.deleteLoans(id).subscribe(data =>{
+        this.ngOnInit();
+        
+      })
+    }
+  
 
 }

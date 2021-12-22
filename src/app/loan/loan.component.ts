@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LoanService } from '../loan.service';
 import { Loan } from './loan.model';
 
@@ -10,9 +10,14 @@ import { Loan } from './loan.model';
 })
 export class LoanComponent implements OnInit {
 
-  loan:Loan = {};
+  loan:Loan = {
+    id: 0
+  };
 
-  constructor(private route:ActivatedRoute, private loanService: LoanService) { }
+  constructor(private route:ActivatedRoute, 
+    private loanService: LoanService,
+    private router: Router,
+    ) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params=>{
@@ -24,6 +29,7 @@ export class LoanComponent implements OnInit {
     })
   }
 
-  
-
+    edit():void {
+      this.router.navigateByUrl(`/loans/${this.loan.id}/edit`);
+    }
 }
