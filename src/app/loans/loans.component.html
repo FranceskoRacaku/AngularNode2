@@ -1,8 +1,12 @@
 <h1>Loans</h1>
 <div class="grid-container" id="gridContainer">
+    
     <div *ngFor="let loan of loans">
+        
+    
     <a [routerLink]="['/loans', loan.id]">{{loan.name}}
         <br>{{loan.occupation}}
     </a>
+    <button (click) = "deleteLoans(loan.id)">delete</button>
     </div>
 </div>

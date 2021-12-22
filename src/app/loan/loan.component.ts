@@ -11,7 +11,7 @@ import { Loan } from './loan.model';
 export class LoanComponent implements OnInit {
 
   loan:Loan = {
-    id: 0
+    id: 0,
   };
 
   constructor(private route:ActivatedRoute, 

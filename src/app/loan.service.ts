@@ -23,10 +23,11 @@ export class LoanService {
     return this.http.get("http://localhost:8082/api/funds");
 
   }
-  updateLoans(loan: Loan):Observable<any>{
+  updateLoans(loan: Loan): Observable<any>{
     
-    return this.http.patch(`http//localhost:8082/api/funds/${loan.id}`, loan)
+    return this.http.patch(`http://localhost:8082/api/funds/${loan.id}`, loan);
   }
+
 
   getLoan(id: number): Observable<any> {
     return this.http.get("http://localhost:8082/api/funds/"+id);

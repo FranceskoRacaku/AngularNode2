@@ -7,8 +7,8 @@ import { EditLoansComponent } from './editloans/editloans.component';
 
 const routes: Routes = [
   {path: "loans", component: LoansComponent},
-  {path: "loans/:id", component: LoanComponent},
   {path: "loans/create", component: CreateComponent},
+  {path: "loans/:id", component: LoanComponent},
   {path: "loans/:id/edit", component: EditLoansComponent},
 ];
 

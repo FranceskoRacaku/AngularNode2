@@ -1,8 +1,30 @@
 Name:<input [(ngModel)]= "createLoan.name" type = "text" value = "">
 <br>
+<button (click) = "createLoans(createLoan)">create</button>
+        
+        
+<!--
+Age:<input [(ngModel)]= "loan.age" type = "number" value = "">
+<br>
+Occupation:<input [(ngModel)]= "loan.occupation" type = "text" value = "">
+<br>
+Birthday:<input [(ngModel)]= "loan.birthday" type = "text" value = "">
+<br>
+House Status:<input [(ngModel)]= "loan.houseStatus" type = "text" value = "">
+<br>
+Rent Cost:<input [(ngModel)]= "loan.rentCost" type = "number" value = "">
+<br>
+Yearly Net Income:<input [(ngModel)]= "loan.yearlyNetIncome" type = "number" value = "">
+<br>
+Requested Loan Amount:<input [(ngModel)]= "loan.requestedLoanAmount" type = "number" value = "">
+<br>
+Approved Loan:<input [(ngModel)]= "loan.approvedLoan" type = "number" value = "">
+<br>
 
 
-<!-- <div class="grid-container" id="gridContainer">
+
+
+ <div class="grid-container" id="gridContainer">
     <div *ngFor="let loan of loans" id="loans">
 
         <p id ="text" > Title:</p> {{loan.name}}
