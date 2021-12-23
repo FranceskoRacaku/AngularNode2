@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { LoanComponent } from './loan/loan.component';
 import { LoansComponent } from './loans/loans.component';
 import { CreateComponent } from './create/create.component';
+import { RouterModule, Routes } from '@angular/router';
 import { EditLoansComponent } from './editloans/editloans.component';
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 

@@ -28,19 +28,17 @@ export class CreateComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params=>{
-      const myid = +params['id'];
-      this.loanService.getLoan(myid).subscribe(payload=>{
-        console.log("creating this", payload);
-        this.createLoan = payload;
-      })
+    this.loanService.getLoans().subscribe(payload => {
+      this.loans = payload;
     })
+    
   }
 
 
   createLoans(createLoan: any){
     this.loanService.createLoan(createLoan).subscribe(data => {
       if (data){
+        this.createLoan = data;
         this.router.navigateByUrl("/loans");
       }
       console.log("Loan is Created ", data);

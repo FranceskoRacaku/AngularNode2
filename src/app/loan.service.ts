@@ -11,8 +11,8 @@ export class LoanService {
   constructor(private http:HttpClient) { }
 
  
-  createLoan(loan: any) {
-    return this.http.post('http://localhost:8082/api/funds', loan);
+  createLoan(createLoan: any) {
+    return this.http.post('http://localhost:8082/api/funds', createLoan);
   }
 
   deleteLoans(id: any) {
