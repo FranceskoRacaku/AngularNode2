@@ -1,43 +1,23 @@
-Name:<input [(ngModel)]= "createLoan.name" type = "text" value = "">
-<br>
-Age:<input [(ngModel)]= "createLoan.age" type = "number" value = "">
-<br>
-Occupation:<input [(ngModel)]= "createLoan.occupation" type = "text" value = "">
-<br>
-Birthday:<input [(ngModel)]= "createLoan.birthday" type = "text" value = "">
-<br>
-House Status:<input [(ngModel)]= "createLoan.houseStatus" type = "text" value = "">
-<br>
-Rent Cost:<input [(ngModel)]= "createLoan.rentCost" type = "number" value = "">
-<br>
-Yearly Net Income:<input [(ngModel)]= "createLoan.yearlyNetIncome" type = "number" value = "">
-<br>
-Requested Loan Amount:<input [(ngModel)]= "createLoan.requestedLoanAmount" type = "number" value = "">
-<br>
-Approved Loan:<input [(ngModel)]= "createLoan.approvedLoan" type = "number" value = "">
-<br>
-<button (click) = "createLoans(createLoan)">create</button>
-        
-        
-<!--
-    
-
-
-
-
-
- <div class="grid-container" id="gridContainer">
-    <div *ngFor="let loan of loans" id="loans">
-
-        <p id ="text" > Title:</p> {{loan.name}}
-        <p id ="number" > Title:</p> {{loan.age}}
-        <p id ="text" > Title:</p> {{loan.occupation}}
-        <p id ="text" > Title:</p> {{loan.birthday}}
-        <p id ="text" > Title:</p> {{loan.houseStatus}}
-        <p id ="number" > Title:</p> {{loan.rentCost}}
-        <p id ="number" > Title:</p> {{loan.yearlyNetIncome}}
-        <p id ="number" > Title:</p> {{loan.requestedLoanAmount}}
-        <p id ="number" > Title:</p> {{loan.approvedLoan}}
+<div class = "center" id = "centerText" id ="text">
+    Name:<input [(ngModel)]= "createLoan.name" id ="inputText" type = "text" value = "" placeholder="e.g. (John Smith)">
     <br>
-    </div>
+    Age:<input [(ngModel)]= "createLoan.age" id ="inputText" type = "number" value = "" placeholder="e.g. (29)">
+    <br>
+    Occupation:<input [(ngModel)]= "createLoan.occupation" id ="inputText" type = "text" value = "" placeholder="e.g. (Teacher)">
+    <br>
+    Birthday:<input [(ngModel)]= "createLoan.birthday" id ="inputText" type = "text" value = "" placeholder="e.g. (October 5th 1992)">
+    <br>
+    House Status:<input [(ngModel)]= "createLoan.houseStatus" id ="inputText" type = "text" value = "" placeholder="e.g. (Rent/Own/Other)">
+    <br>
+    Rent Cost:<input [(ngModel)]= "createLoan.rentCost" id ="inputText" type = "number" value = "" placeholder="e.g. (850)">
+    <br>
+    Yearly Net Income:<input [(ngModel)]= "createLoan.yearlyNetIncome" id ="inputText" type = "number" value = "" placeholder="e.g. (85000)">
+    <br>
+    Requested Loan Amount:<input [(ngModel)]= "createLoan.requestedLoanAmount" id ="inputText" type = "number" value = "" placeholder="e.g. (150000)">
+    <br>
+    Approved Loan:<input [(ngModel)]= "createLoan.approvedLoan" id ="inputText" type = "number" value = "" placeholder="e.g. (50000)">
+    <br>
+</div>
+<div id="button_div">
+<button (click) = "createLoans(createLoan)" id = "wrapper" class="shadow" value="Shadow"id = "wrapper" class="shadow" value="Shadow">create</button>
 </div>

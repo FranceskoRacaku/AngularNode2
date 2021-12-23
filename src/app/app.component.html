@@ -8,28 +8,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="app.component.scss">
-    <title>Books</title>
+    
 
 
 </head>
 <body>
-
+   
 
   <!-- Body Container -->
-  <div class="loans-container">
+  <div class="loans-container" >
     <form class="data-for-loans">
       <!-- Banner -->
       <div class="title">
+
         <h1>Loans</h1>
       </div>
       
+      <div id="button_div">
       <p>
-        <a routerLink="/loans">Loans</a>
+        <a routerLink="/loans"><button type = "button" id = "wrapper" class="shadow" value="Shadow">Loans</button></a>
 
-        || <a routerLink="/loans/create">Create</a>
+        || <a routerLink="/loans/create">
+          <button type = "button" id = "wrapper" class="shadow" value="Shadow">Create</button></a>
         </p>
+      </div>
+
       <router-outlet></router-outlet>
+      
     </form>
   </div>
+
 </body>
 </html>

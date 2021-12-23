@@ -33,7 +33,7 @@ export class EditLoansComponent implements OnInit {
   update():void{
     this.loanService.updateLoans(this.loan).subscribe(data => {
       if (data){
-        this.router.navigateByUrl("/loans");
+        this.router.navigateByUrl(`/loans/${this.loan.id}`);
       }
       console.log("Loan is Updated ", data);
     })

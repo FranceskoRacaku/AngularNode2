@@ -1,15 +1,16 @@
-<div>
-    Name: <input [(ngModel)] ="loan.name" type = "text" value = "" />
-    Age: <input [(ngModel)] ="loan.age"type = "number" value = "" />
-    Occupation: <input [(ngModel)] ="loan.occupation" type = "text" value = ""/>
-    Birthday: <input [(ngModel)] ="loan.birthday" type = "text" value = ""/>
-    House Status: <input [(ngModel)] ="loan.houseStatus" type = "text" value = ""/>
-    Rent Cost: <input [(ngModel)] ="loan.rentCost" type = "number" value = ""/>
-    Yearly Net Income: <input [(ngModel)] ="loan.yearlyNetIncome" type = "number" value = ""/>
-    Requested Loan Amount: <input [(ngModel)] ="loan.requestedLoanAmount" type = "number" value = ""/>
-    Approved Loan: <input [(ngModel)] ="loan.approvedLoan" type = "number" value = ""/>
+<div class = "center" id = "centerText" id ="text">
+    Name: <input [(ngModel)] ="loan.name" id ="inputText" type = "text" value = "" placeholder="e.g. (John Smith)"/>
+    Age: <input [(ngModel)] ="loan.age" id ="inputText" type = "number" value = "" placeholder="e.g. (29)"/>
+    Occupation: <input [(ngModel)] ="loan.occupation" id ="inputText" type = "text" value = "" placeholder="e.g. (Teacher)"/>
+    Birthday: <input [(ngModel)] ="loan.birthday" id ="inputText" type = "text" value = "" placeholder="e.g. (October 5th 1992)"/>
+    House Status: <input [(ngModel)] ="loan.houseStatus" id ="inputText" type = "text" value = "" placeholder="e.g. (Rent/Own/Other)"/>
+    Rent Cost: <input [(ngModel)] ="loan.rentCost" id ="inputText" type = "number" value = "" placeholder="e.g. (850)"/>
+    Yearly Net Income: <input [(ngModel)] ="loan.yearlyNetIncome" id ="inputText" type = "number" value = "" placeholder="e.g. (85000)"/>
+    Requested Loan Amount: <input [(ngModel)] ="loan.requestedLoanAmount" id ="inputText" type = "number" value = "" placeholder="e.g. (150000)"/>
+    Approved Loan: <input [(ngModel)] ="loan.approvedLoan" id ="inputText" type = "number" value = "" placeholder="e.g. (50000)"/>
     
 </div>
 
-
-<button (click) = "update()">update loan</button> 
+<div id="button_div">
+<button (click) = "update()" id = "wrapper" class="shadow" value="Shadow"id = "wrapper" class="shadow" value="Shadow">update loan</button> 
+</div>

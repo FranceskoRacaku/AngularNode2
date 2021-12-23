@@ -1,15 +1,16 @@
 
 <div class = "center" id = "centerText">
 
-<p id ="text"> Name:<p>{{loan.name}} 
-<p id ="text"> Age:</p> {{loan.age}}
-<p id ="text"> Occupation:</p>{{loan.occupation}}
-<p id ="text"> Birthday:</p>{{loan.birthday}}
-<p id ="text"> House Status:</p>{{loan.houseStatus}}
-<p id ="text"> Rent Cost:</p>{{loan.rentCost}}
-<p id ="text"> Yearly Net Income:</p>{{loan.yearlyNetIncome}}
-<p id ="text"> Requested Loan Amount:</p>{{loan.requestedLoanAmount}}
-<p id ="text"> Approved Loan:</p>{{loan.approvedLoan}}
+<p id ="text"> Name:<p> {{loan.name}}
+<p id ="text"> Age:<p> {{loan.age}}
+<p id ="text"> Occupation:<p>{{loan.occupation}}
+<p id ="text"> Birthday:<p>{{loan.birthday}}
+<p id ="text"> House Status:<p>{{loan.houseStatus}}
+<p id ="text"> Rent Cost:<p>{{loan.rentCost}}
+<p id ="text"> Yearly Net Income:<p>{{loan.yearlyNetIncome}}
+<p id ="text"> Requested Loan Amount:<p>{{loan.requestedLoanAmount}}
+<p id ="text"> Approved Loan:<p>{{loan.approvedLoan}}
 <br>
-
-<button (click) = "edit()">edit loan</button>
+<div id="button_div">
+<button (click) = "edit()" id = "wrapper" class="shadow" value="Shadow">edit loan</button>
+</div>
