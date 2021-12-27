@@ -10,7 +10,6 @@ import { Loan } from '../loan/loan.model';
 })
 export class CreateComponent implements OnInit {
 
-  loans: Loan[] = [];
   createLoan: any ={
     name: "",
     age: "",
@@ -28,10 +27,6 @@ export class CreateComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.loanService.getLoans().subscribe(payload => {
-      this.loans = payload;
-    })
-    
   }
 
 
