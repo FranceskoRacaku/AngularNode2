@@ -38,7 +38,6 @@ export class CreateComponent implements OnInit {
   createLoans(createLoan: any){
     this.loanService.createLoan(createLoan).subscribe(data => {
       if (data){
-        this.createLoan = data;
         this.router.navigateByUrl("/loans");
       }
       console.log("Loan is Created ", data);
